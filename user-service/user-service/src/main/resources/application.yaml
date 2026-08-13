@@ -1,0 +1,14 @@
+kafka.topic.user-random-topic: user-random-topic
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:9000/learnKafka?options=-c%20TimeZone=UTC
+    username: testUser
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  kafka:
+    bootstrap-servers: localhost:9092
